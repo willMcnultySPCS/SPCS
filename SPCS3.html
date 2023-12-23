@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Secret Pony Coding Society</title>
+	<style>
+		.header {
+			background-color: black;
+			font-size: 56pt;
+			color: white;
+			text-align: center;
+			margin: 0px;
+			border: 4px solid cornflowerblue;
+			padding: 33px;		
+		}
+		.banner {
+			background-color: cornflowerblue;
+			font-size: 18pt;
+			color: black;
+			text-align: center;
+			margin: 0px;
+			padding:10px;
+		}
+		.maintext {
+			background-color: ivory;
+			font-size: 16pt;
+			color: black;
+			text-align: left;
+			margin:0px;
+			padding: 10px;
+		}
+		.divs {
+			margin: 5px;
+			width: 36%;
+			float: right;
+			border: 4px solid cornflowerblue;
+			padding: 10px;
+		}
+		.divs2 {
+			margin: 5px;
+			width: 36%;
+			float: left;
+			border: 4px solid cornflowerblue;
+			padding: 10px;
+		}
+		.answerbox {
+			width:61%;
+			float:right;
+			margin:0px;
+			padding:0px;
+			font-size:28pt;
+			color:black;
+			text-align: left;
+			background-color:magenta;
+		}
+		.question {
+			background-color: ivory;
+			font-size: 28pt;
+			color: black;
+			text-align: left;
+			margin:0px;
+			padding: 10px;
+		}
+	</style>
+	<script>
+  		function checkAnswer() {
+   		var germanAnswer = document.getElementById("germanAnswer");
+   		var germanAnswerText = germanAnswer.value;
+   		if(germanAnswerText == "Pferd") {
+    		return true;
+   		}
+   		alert("Access denied! Incorrect answer! Maybe you will have to use a German dictionary!");
+   		return false;
+   		}
+ 	</script>
+</head>
+<body>
+	<div>
+		<img src="SPCS.jpg" alt="SPCS" style="float: left;width: 158px;"/>
+		<p class="header">
+			THE SECRET PONY CODING SOCIETY
+		</p>
+		<p class="banner">
+			The secret club for ponies who are into computer coding
+		</p>
+	</div>
+	<div class="maintext"; style="width: 60%;float: left;"> 
+		<p>You're on fire Alice! That's some great maths skills. But we can't be too careful as the Elf is known to cheat and use a calculator!</p>
+		<p>Toby told us you were learning German and of course elves can't speak German. Umm, well unless perhaps they are from Germany.</p>
+			</div>
+	<div class=divs>
+		<img src="chorse.webp" alt="horse" style="width: 100%;image-align:center;"/>
+		<p style="text-align: center;">A pony in a Christmas onesie</p>
+	</div>
+	<div>
+		<p class="maintext">So that leads us to our next question!.</p>
+		<p class="question">What is a horse called in German?</p>
+	<div class=divs2>
+		<img src="horsehat.webp" alt="horse hat" style="width: 100%;image-align:center;"/>
+		<p style="text-align: center;">Agent Santa Claus <br/>
+		A horse in a Christmas hat. Why not?</p>
+	</div>
+	<div class="answerbox">
+		<label for="germanAnswer">Answer:</label>
+		<input id="germanAnswer" type="text" style="font-size:28pt" name="germanAnswer"/>
+		<a href="http://www.bbc.co.uk" onclick="return checkAnswer();"><br/>
+			Click here to check your answer
+  
+ 	</a>
+	</div>
+	
+
+</body>
+</html>
