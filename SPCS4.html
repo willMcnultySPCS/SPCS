@@ -63,12 +63,12 @@
 	</style>
 	<script>
   		function checkAnswer() {
-   		var germanAnswer = document.getElementById("germanAnswer");
-   		var germanAnswerText = germanAnswer.value;
-   		if(germanAnswerText == "Pferd") {
+   		var finalAnswer = document.getElementById("finalAnswer");
+   		var finalAnswerText = finalAnswer.value;
+   		if(finalAnswerText == "Alice loves P0nies") {
     		return true;
    		}
-   		alert("Access denied! Incorrect answer! Maybe you will have to use a German dictionary!");
+   		alert("Access denied! Incorrect answer! Are you sure you are Alice?");
    		return false;
    		}
  	</script>
@@ -83,26 +83,20 @@
 			The secret club for ponies who are into computer coding
 		</p>
 	</div>
-	<div class="maintext"; style="width: 60%;float: left;"> 
-		<p>You're on fire Alice! That's some great maths skills. But we can't be too careful as the Elf is known to cheat and use a calculator!</p>
-		<p>Toby told us you were learning German and of course elves can't speak German. Umm, well unless perhaps they are from Germany.</p>
-			</div>
-	<div class=divs>
-		<img src="chorse.webp" alt="horse" style="width: 100%;image-align:center;"/>
-		<p style="text-align: center;">A pony in a Christmas onesie</p>
+	<div class="maintext"; style="width: 100%;float: left;"> 
+		<p>The dead drop:</p>
+		<p>To make sure the Elves are not hacking the website, you must complete the dead drop. One of our pony agents is hiding close by and has the answer to the final clue. You must deliver a carrot (her favourite Christmas snack) to the back garden. Leave it there and go back inside. You must not watch because she is very shy and must keep her identity secret. Once you get the all clear, you can go and retrieve the clue she has left you.</p>
 	</div>
 	<div>
-		<p class="maintext">So that leads us to our next question!.</p>
-		<p class="question">What is a horse called in German?</p>
+		<p class="question">What is the password that Agent Clover has left you in her dead drop?</p>
 	<div class=divs2>
-		<img src="horsehat.webp" alt="horse hat" style="width: 100%;image-align:center;"/>
-		<p style="text-align: center;">Agent Santa Claus <br/>
-		A horse in a Christmas hat. Why not?</p>
+		<img src="agentclover.webp" alt="clover" style="width: 100%;image-align:center;"/>
+		<p style="text-align: center;">Agent Clover with her friend</p>
 	</div>
 	<div class="answerbox">
-		<label for="germanAnswer">Answer:</label>
-		<input id="germanAnswer" type="text" style="font-size:28pt" name="germanAnswer"/>
-		<a href="SPCS4.html" onclick="return checkAnswer();"><br/>
+		<label for="finalAnswer">Answer:</label>
+		<input id="finalAnswer" type="text" style="font-size:28pt" name="finalAnswer"/>
+		<a href="SPCS5.html" onclick="return checkAnswer();"><br/>
 			Click here to check your answer
   
  	</a>
